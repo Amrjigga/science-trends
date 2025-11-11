@@ -1,0 +1,13 @@
+text_fields: ["title", "abstract"]
+min_df: 5
+max_df: 0.7
+svd_dims: 200
+use_sbert: false
+sbert_model: all-MiniLM-L6-v2
+clusterer: kmeans         
+k_range: [10, 16]
+umap_dims: 2
+time_granularity: "M"     # monthly
+trend_window: 12          # last 12 periods for slope
+min_support: 100
+slope_threshold: 0.002
